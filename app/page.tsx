@@ -64,6 +64,7 @@ export default function Home() {
       setFormStatus("success");
       setEmail("");
     } catch (error) {
+      console.error("Error submitting Waitlist", error);
       setFormStatus("error");
     }
   };
@@ -1361,6 +1362,7 @@ function ContactForm({
         type: "general",
       });
     } catch (error) {
+      console.error("Unable to connect to Supabase", error);
       setFormStatus("error");
     }
   };
