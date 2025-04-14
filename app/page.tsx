@@ -6,7 +6,7 @@ import dementiaAnimation from "./assets/hospital.json";
 import howitworksAnimation from "./assets/howitworks.json";
 import PatientCareAnimation from "./assets/PatientCare.json";
 import investmentAnimation from "./assets/investment.json";
-
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import {
   motion,
@@ -242,7 +242,7 @@ export default function Home() {
                       className="keen-slider__slide flex items-center justify-center"
                       key={index}
                     >
-                      <img
+                      <Image
                         src={src}
                         alt={`MemoTag Device ${index + 1}`}
                         className="h-full w-full object-contain"
